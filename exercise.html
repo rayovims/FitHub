@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>FitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://use.fontawesome.com/86907fa281.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+</head>
+
+<body>
+    <div id="header1" class="row">
+        <div class="col-lg-5 text-left">
+            <h1 id="logo">FitHub <span><i class="fa fa-spinner" aria-hidden="true"></i></span></h1>
+        </div>
+        <div id="nav" class="col-lg-5 text-center">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="exercise.html">Exercise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nutrition.html">Nutrition</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="social.html">Social</a>
+                </li>
+            </ul>
+        </div>
+        <div id="LOGIN" class="col-lg-2 text-center">
+            <button type="button" class="btn btn-success" id="signin-button">Sign in</button>
+            <button type="button" class="btn btn-success" id="signout-button">Sign Out</button>
+            </div>
+    </div>
+    <br>
+    <div class="container">
+        <div id="buttonGen" class="row">
+            <div class="col-sm-3">
+                <button id="staffPickBtn" class="btn btn-success">Staff Pick</button>
+            </div>
+            <div class="col-sm-5 text-right">
+                <input id="query" placeholder="Search" type="text">
+            </div>
+            <div class="col-sm-1 text-left">
+                <button id="search-button" type="button" class="btn btn-success">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="col-sm-3 text-right">
+                <button id="newNotesBtn" class="btn btn-success">Notes</button>
+            </div>
+        </div>
+        <div id="notesSaved" class="row">
+        </div>
+        <div id="videoHome" class="row">
+        </div>
+        <div id="videoSearched" class="row">
+            <div id="fix" class="col-lg-3">
+                <div id="pic"></div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div id="fix2" class="col-lg-7 text-right">
+                <div id="videosGoHere"></div>
+                <p id="notes">Notes: </p>
+                <textarea placeholder="Remember: Keep good form" id="userNotes"></textarea>
+            </div>
+        </div>
+    </div>
+    <div id="footer" class="col-lg-12 text-center">
+        <p>FitHub &copy;</p>
+    </div>
+    <script src="assets/java/youtube2.js"></script>
+    <!-- <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady "></script> -->
+    <script async defer src="https://apis.google.com/js/api.js " onload="this.onload=function(){};handleClientLoad() " onreadystatechange="if (this.readyState==='complete' ) this.onload()">
+    </script>
+</body>
+
+</html>
